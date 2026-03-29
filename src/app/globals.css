@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #110B2B;
+  --navy-800: #1A1040;
+  --navy-700: #231555;
+  --purple: #7C3AED;
+  --purple-600: #6D28D9;
+  --purple-400: #A78BFA;
+  --purple-100: #EDE9FE;
+  --accent: #E879F9;
+  --accent-600: #D946EF;
+  --accent-100: #FDF2FF;
+  --gold: #F0C755;
+  --gray-50: #F7F9FC;
+  --gray-100: #EEF2F7;
+  --gray-300: #C5CDD8;
+  --gray-400: #8896A6;
+  --gray-600: #4A5568;
+  --gray-900: #0D1B2A;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-sky: var(--purple);
+  --color-sky-600: var(--purple-600);
+  --color-sky-400: var(--purple-400);
+  --color-sky-100: var(--purple-100);
+  --color-accent: var(--accent);
+  --color-accent-600: var(--accent-600);
+  --color-accent-100: var(--accent-100);
+  --color-gold: var(--gold);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-600: var(--gray-600);
+  --color-gray-900: var(--gray-900);
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-900);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-purple {
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.2), 0 0 80px rgba(124, 58, 237, 0.1);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px rgba(232, 121, 249, 0.15), 0 0 80px rgba(232, 121, 249, 0.08);
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(232, 121, 249, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, var(--navy) 0%, #0E0820 100%);
+}
