@@ -75,8 +75,8 @@ const translations = {
     en: "A Complete Platform to Master Your Risks",
   },
   "featuresPreview.subtitle": {
-    fr: "YARDA combine intelligence artificielle, règles métier et conformité réglementaire pour vous donner une longueur d'avance sur la fraude, le blanchiment et les exigences des régulateurs.",
-    en: "YARDA combines artificial intelligence, business rules, and regulatory compliance to keep you ahead of fraud, money laundering, and regulator requirements.",
+    fr: "YARDA crée et déploie des modèles d'IA qui apprennent en continu sur vos données transactionnelles anonymisées — pour une détection de fraude qui s'adapte à votre réalité, pas à des règles génériques.",
+    en: "YARDA creates and deploys AI models that continuously learn from your anonymized transaction data — for fraud detection that adapts to your reality, not generic rules.",
   },
   "featuresPreview.cta": {
     fr: "Voir toutes les fonctionnalités",
@@ -84,34 +84,34 @@ const translations = {
   },
 
   // Feature items
-  "feature.ai.title": { fr: "Moteur IA hybride", en: "Hybrid AI Engine" },
+  "feature.ai.title": { fr: "Pipeline IA progressif", en: "Progressive AI Pipeline" },
   "feature.ai.desc": {
-    fr: "Trois modèles d'IA travaillent ensemble : détection d'anomalies (sans données historiques), classification supervisée (entraînée sur vos données) et analyse de réseaux (détection de rings frauduleux). Chaque transaction reçoit un score de risque et une décision automatique.",
-    en: "Three AI models work together: anomaly detection (no historical data needed), supervised classification (trained on your data), and network analysis (fraud ring detection). Every transaction gets a risk score and automatic decision.",
+    fr: "Trois modèles d'IA déployés progressivement : d'abord la détection d'anomalies entraînée sur vos données transactionnelles anonymisées, puis un classificateur supervisé multi-labels entraîné sur les labels de votre équipe selon votre propre taxonomie de fraude, et enfin un modèle de détection de réseaux (GNN) où les transactions ne sont plus des entités individuelles mais des nœuds d'un graphe.",
+    en: "Three AI models deployed progressively: first, anomaly detection trained on your anonymized transaction data, then a multi-label supervised classifier trained on your team's labels using your own fraud taxonomy, and finally a network detection model (GNN) where transactions are no longer individual entities but nodes in a graph.",
   },
-  "feature.rules.title": {
-    fr: "Moteur de règles intelligentes",
-    en: "Smart Rules Engine",
+  "feature.anonymized.title": {
+    fr: "Données anonymisées & respect de la vie privée",
+    en: "Anonymized Data & Privacy by Design",
   },
-  "feature.rules.desc": {
-    fr: "Définissez vos propres règles métier en complément de l'IA : limites de vélocité, montants inhabituels, corridors suspects, horaires atypiques, listes noires. Adaptez les seuils à votre contexte opérationnel et aux exigences de votre régulateur.",
-    en: "Define your own business rules alongside AI: velocity limits, unusual amounts, suspicious corridors, atypical hours, blacklists. Adapt thresholds to your operational context and regulator requirements.",
+  "feature.anonymized.desc": {
+    fr: "YARDA traite exclusivement des données transactionnelles anonymisées — aucune donnée personnelle n'est nécessaire ni utilisée. Vos clients partagent leurs flux de transactions dépourvus d'informations identifiantes, ce qui nous permet d'entraîner des modèles puissants tout en garantissant le respect total de la vie privée et de la réglementation.",
+    en: "YARDA exclusively processes anonymized transaction data — no personal data is needed or used. Your clients share transaction flows stripped of identifying information, allowing us to train powerful models while fully respecting privacy and regulatory requirements.",
   },
   "feature.dashboard.title": {
     fr: "Tableau de bord en temps réel",
     en: "Real-Time Dashboard",
   },
   "feature.dashboard.desc": {
-    fr: "Surveillez vos transactions en direct, gérez la file de révision des alertes, étiquetez en un clic (fraude/légitime) pour nourrir le modèle, et suivez vos KPIs de conformité par client et par corridor.",
-    en: "Monitor transactions live, manage alert review queues, label with one click (fraud/legitimate) to feed the model, and track compliance KPIs by client and corridor.",
+    fr: "Surveillez vos transactions en direct, gérez la file de révision des alertes, étiquetez en un clic selon votre taxonomie de fraude pour nourrir les modèles, et suivez vos KPIs de conformité par client et par corridor.",
+    en: "Monitor transactions live, manage alert review queues, label with one click using your fraud taxonomy to feed the models, and track compliance KPIs by client and corridor.",
   },
   "feature.explainability.title": {
     fr: "IA explicable & piste d'audit",
     en: "Explainable AI & Audit Trail",
   },
   "feature.explainability.desc": {
-    fr: "Chaque décision de risque est accompagnée d'une explication détaillée : facteurs contributifs, règles déclenchées, décomposition du score. Fournissez aux régulateurs des rapports clairs et une piste d'audit complète pour chaque alerte.",
-    en: "Every risk decision comes with a detailed explanation: contributing factors, triggered rules, score breakdown. Provide regulators with clear reports and a complete audit trail for every alert.",
+    fr: "Chaque décision de risque est accompagnée d'une explication détaillée : facteurs contributifs, décomposition du score par modèle, importance des features (SHAP). Fournissez aux régulateurs des rapports clairs et une piste d'audit complète pour chaque alerte.",
+    en: "Every risk decision comes with a detailed explanation: contributing factors, per-model score breakdown, feature importance (SHAP). Provide regulators with clear reports and a complete audit trail for every alert.",
   },
   "feature.multitenant.title": {
     fr: "Architecture multi-opérateur",
@@ -148,28 +148,28 @@ const translations = {
     en: "From Integration to Intelligence in 4 Steps",
   },
   "howItWorks.subtitle": {
-    fr: "YARDA vous protège dès le premier jour et devient plus intelligent avec le temps. Pas besoin de données historiques pour commencer — l'IA s'adapte progressivement à vos flux et à vos risques spécifiques.",
-    en: "YARDA protects you from day one and gets smarter over time. No historical data needed to start — AI progressively adapts to your flows and specific risks.",
+    fr: "YARDA crée des modèles d'IA entraînés sur vos données transactionnelles anonymisées — sans aucune donnée personnelle. Chaque modèle apprend de votre activité et s'améliore en continu. C'est notre point fort : une IA qui comprend votre réalité.",
+    en: "YARDA builds AI models trained on your anonymized transaction data — with zero personal data. Each model learns from your activity and continuously improves. This is our edge: AI that understands your reality.",
   },
-  "howItWorks.step1.title": { fr: "Connectez", en: "Connect" },
+  "howItWorks.step1.title": { fr: "Connectez & anonymisez", en: "Connect & Anonymize" },
   "howItWorks.step1.desc": {
-    fr: "Intégrez notre API REST en moins d'une heure. Un seul appel API par transaction suffit pour obtenir un score de risque, une décision (PASS, REVIEW, ALERT, BLOCK) et une explication. SDKs disponibles en Python et Node.js.",
-    en: "Integrate our REST API in under one hour. A single API call per transaction gives you a risk score, decision (PASS, REVIEW, ALERT, BLOCK), and explanation. SDKs available in Python and Node.js.",
+    fr: "Partagez vos données transactionnelles anonymisées via notre API REST — aucune donnée personnelle n'est nécessaire. YARDA utilise uniquement les caractéristiques de la transaction (montant, devise, corridor, horodatage, etc.) sans aucune information identifiante. L'intégration se fait en moins d'une heure.",
+    en: "Share your anonymized transaction data through our REST API — no personal data is needed. YARDA only uses transaction characteristics (amount, currency, corridor, timestamp, etc.) without any identifying information. Integration takes less than one hour.",
   },
-  "howItWorks.step2.title": { fr: "Détectez", en: "Detect" },
+  "howItWorks.step2.title": { fr: "Détectez les anomalies", en: "Detect Anomalies" },
   "howItWorks.step2.desc": {
-    fr: "Dès le premier jour, la détection d'anomalies identifie les transactions suspectes sans avoir besoin de données étiquetées. Le moteur de règles applique vos politiques de conformité LCB-FT en parallèle.",
-    en: "From day one, anomaly detection identifies suspicious transactions without needing labeled data. The rules engine applies your AML/CFT compliance policies in parallel.",
+    fr: "Le premier modèle d'IA s'entraîne sur vos données transactionnelles anonymisées pour apprendre les schémas normaux de votre activité. Sans aucun label nécessaire, il identifie immédiatement les transactions qui dévient du comportement habituel — les anomalies qui méritent une attention particulière.",
+    en: "The first AI model trains on your anonymized transaction data to learn the normal patterns of your business. Without any labels needed, it immediately identifies transactions that deviate from usual behavior — anomalies that deserve closer attention.",
   },
-  "howItWorks.step3.title": { fr: "Apprenez", en: "Learn" },
+  "howItWorks.step3.title": { fr: "Classifiez la fraude", en: "Classify Fraud" },
   "howItWorks.step3.desc": {
-    fr: "Étiquetez les transactions (fraude/légitime) via le tableau de bord. Après 100+ labels, le modèle de classification supervisée s'entraîne sur vos données réelles pour une précision accrue et moins de faux positifs.",
-    en: "Label transactions (fraud/legitimate) through the dashboard. After 100+ labels, the supervised classification model trains on your real data for higher accuracy and fewer false positives.",
+    fr: "À partir des alertes du modèle d'anomalies, vos équipes étiquettent les transactions selon votre propre taxonomie de fraude (multi-labels). Ces labels entraînent un modèle de classification supervisée qui apprend à distinguer chaque type de fraude spécifique à votre activité — avec une précision qui augmente à chaque étiquetage.",
+    en: "From the anomaly model's alerts, your teams label transactions using your own fraud taxonomy (multi-label). These labels train a supervised classification model that learns to distinguish each type of fraud specific to your business — with accuracy that increases with every label.",
   },
-  "howItWorks.step4.title": { fr: "Évoluez", en: "Evolve" },
+  "howItWorks.step4.title": { fr: "Détectez les réseaux", en: "Detect Networks" },
   "howItWorks.step4.desc": {
-    fr: "La plateforme s'améliore en continu : réentraînement automatique, détection de dérive, et bientôt la détection de réseaux frauduleux par IA graphique (GNN). Votre conformité et votre sécurité progressent avec vous.",
-    en: "The platform continuously improves: auto retraining, drift detection, and coming soon — fraud network detection via graph AI (GNN). Your compliance and security grow with you.",
+    fr: "Le troisième modèle — un réseau de neurones sur graphe (GNN) — va au-delà de la transaction individuelle. Il analyse les relations entre transactions, expéditeurs et bénéficiaires pour détecter les réseaux frauduleux organisés, les schémas de blanchiment et les rings de fraude que les modèles classiques ne peuvent pas voir.",
+    en: "The third model — a graph neural network (GNN) — goes beyond the individual transaction. It analyzes relationships between transactions, senders, and recipients to detect organized fraud networks, laundering patterns, and fraud rings that traditional models cannot see.",
   },
   "howItWorks.api.label": { fr: "Intégration API", en: "API Integration" },
   "howItWorks.api.title": {
@@ -202,7 +202,7 @@ const translations = {
     en: "Up to 10K transactions/month",
   },
   "pricing.starter.f2": { fr: "Détection d'anomalies", en: "Anomaly Detection" },
-  "pricing.starter.f3": { fr: "Moteur de règles LCB-FT", en: "AML/CFT Rules Engine" },
+  "pricing.starter.f3": { fr: "Données 100% anonymisées", en: "100% Anonymized Data" },
   "pricing.starter.f4": { fr: "Tableau de bord basique", en: "Basic Dashboard" },
   "pricing.starter.f5": { fr: "Support par email", en: "Email Support" },
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Shield } from "lucide-react";
+import Image from "next/image";
 import { useTranslation } from "@/lib/i18n-context";
 
 export function Footer() {
@@ -13,11 +13,14 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="mb-4 flex items-center gap-2">
-              <Shield className="h-8 w-8 text-sky" />
-              <span className="font-display text-xl font-bold text-white">
-                YARDA<span className="text-gradient"> AI</span>
-              </span>
+            <Link href="/" className="mb-4 inline-block">
+              <Image
+                src="/logo_with_name.png"
+                alt="YARDA AI"
+                width={200}
+                height={56}
+                className="h-24 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mb-6 max-w-sm text-sm leading-relaxed">
               {t("footer.tagline")}
@@ -61,8 +64,8 @@ export function Footer() {
               {t("footer.legal")}
             </h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">{t("footer.privacy")}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{t("footer.terms")}</a></li>
+              <li><Link href="/privacy" className="hover:text-white transition-colors">{t("footer.privacy")}</Link></li>
+              <li><Link href="/terms" className="hover:text-white transition-colors">{t("footer.terms")}</Link></li>
             </ul>
           </div>
         </div>

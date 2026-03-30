@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Brain,
-  SlidersHorizontal,
+  ShieldCheck,
   LayoutDashboard,
   MessageSquareText,
   Users,
@@ -15,7 +15,7 @@ import { SectionLabel } from "./section-label";
 
 const ICONS = [
   Brain,
-  SlidersHorizontal,
+  ShieldCheck,
   LayoutDashboard,
   MessageSquareText,
   Users,
@@ -24,7 +24,7 @@ const ICONS = [
 
 const FEATURE_KEYS = [
   "ai",
-  "rules",
+  "anonymized",
   "dashboard",
   "explainability",
   "multitenant",

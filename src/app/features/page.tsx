@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
   Brain,
-  SlidersHorizontal,
+  ShieldCheck,
   LayoutDashboard,
   MessageSquareText,
   Users,
@@ -17,7 +17,7 @@ import { CtaContact } from "@/components/cta-contact";
 
 const ICONS = [
   Brain,
-  SlidersHorizontal,
+  ShieldCheck,
   LayoutDashboard,
   MessageSquareText,
   Users,
@@ -26,7 +26,7 @@ const ICONS = [
 
 const FEATURE_KEYS = [
   "ai",
-  "rules",
+  "anonymized",
   "dashboard",
   "explainability",
   "multitenant",

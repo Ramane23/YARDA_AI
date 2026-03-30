@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Plug, Search, GraduationCap, Rocket } from "lucide-react";
+import { Plug, Search, Tags, Network } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-context";
 import { SectionLabel } from "@/components/section-label";
 import { CtaContact } from "@/components/cta-contact";
 
 const STEPS = [
-  { icon: Plug, key: "step1" as const, phase: "Phase 1" },
-  { icon: Search, key: "step2" as const, phase: "Phase 2" },
-  { icon: GraduationCap, key: "step3" as const, phase: "Phase 3" },
-  { icon: Rocket, key: "step4" as const, phase: "Phase 4" },
+  { icon: Plug, key: "step1" as const, phase: "Phase 1 — Intégration" },
+  { icon: Search, key: "step2" as const, phase: "Phase 2 — Détection d'anomalies" },
+  { icon: Tags, key: "step3" as const, phase: "Phase 3 — Classification supervisée" },
+  { icon: Network, key: "step4" as const, phase: "Phase 4 — Détection de réseaux" },
 ];
 
 export default function HowItWorksPage() {

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "@/lib/i18n-context";
 import { SectionLabel } from "./section-label";
+import { NetworkVisual } from "./network-visual";
 
 const STAT_KEYS = ["transactions", "fraud", "clients", "response"] as const;
 
@@ -21,7 +22,11 @@ export function Stats() {
           <SectionLabel text={t("stats.label")} />
         </motion.div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8">
+          <NetworkVisual />
+        </div>
+
+        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {STAT_KEYS.map((key, i) => (
             <motion.div
               key={key}

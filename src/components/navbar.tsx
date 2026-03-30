@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Shield } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-context";
 import { LangToggle } from "./lang-toggle";
 
@@ -40,17 +41,17 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <Shield
-            className={`h-8 w-8 ${scrolled ? "text-sky" : "text-white"}`}
-          />
-          <span
-            className={`font-display text-xl font-bold ${
-              scrolled ? "text-gray-900" : "text-white"
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo_with_name.png"
+            alt="YARDA AI"
+            width={200}
+            height={56}
+            className={`h-24 w-auto transition-all ${
+              scrolled ? "brightness-0" : "brightness-0 invert"
             }`}
-          >
-            YARDA<span className="text-gradient"> AI</span>
-          </span>
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
