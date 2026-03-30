@@ -95,7 +95,11 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex-shrink-0"
+            className="relative flex-shrink-0"
+            style={{
+              maskImage: "radial-gradient(circle, black 40%, transparent 72%)",
+              WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 72%)",
+            }}
           >
             <Image
               src="/west_africa.png"
