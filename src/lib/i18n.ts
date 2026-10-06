@@ -5,7 +5,6 @@ const translations = {
   "nav.features": { fr: "Fonctionnalités", en: "Features" },
   "nav.howItWorks": { fr: "Comment ça marche", en: "How It Works" },
   "nav.about": { fr: "À propos", en: "About" },
-  "nav.references": { fr: "Références", en: "References" },
   "nav.demo": { fr: "Demander une démo", en: "Request a Demo" },
 
   // Hero
@@ -26,12 +25,13 @@ const translations = {
     fr: "Découvrir comment ça marche",
     en: "See How It Works",
   },
-  "hero.trust.speed": { fr: "< 200ms de réponse", en: "< 200ms Response" },
-  "hero.trust.uptime": { fr: "99.9% de disponibilité", en: "99.9% Uptime" },
+  // Trust badges state what the product is built for, not unmeasured results.
   "hero.trust.compliance": {
-    fr: "Conforme LCB-FT",
-    en: "AML/CFT Compliant",
+    fr: "Conçu pour la conformité LCB-FT",
+    en: "Built for AML/CFT compliance",
   },
+  "hero.trust.api": { fr: "Intégration par API REST", en: "REST API integration" },
+  "hero.trust.origin": { fr: "Conçu en Afrique de l'Ouest", en: "Built in West Africa" },
 
   // Problem
   "problem.label": { fr: "Le défi", en: "The Challenge" },
@@ -130,17 +130,6 @@ const translations = {
     en: "The platform automatically detects model drift, launches retraining, and only promotes a new model if it outperforms the current one. Your protection continuously improves without manual intervention.",
   },
 
-  // Stats
-  "stats.label": { fr: "En chiffres", en: "By the Numbers" },
-  "stats.transactions": { fr: "Transactions analysées", en: "Transactions Analyzed" },
-  "stats.transactions.value": { fr: "2M+", en: "2M+" },
-  "stats.fraud": { fr: "Taux de détection", en: "Detection Rate" },
-  "stats.fraud.value": { fr: "99.2%", en: "99.2%" },
-  "stats.clients": { fr: "Opérateurs protégés", en: "Operators Protected" },
-  "stats.clients.value": { fr: "15+", en: "15+" },
-  "stats.response": { fr: "Temps de réponse", en: "Response Time" },
-  "stats.response.value": { fr: "<200ms", en: "<200ms" },
-
   // How It Works
   "howItWorks.label": { fr: "Comment ça marche", en: "How It Works" },
   "howItWorks.title": {
@@ -177,8 +166,8 @@ const translations = {
     en: "One API, millisecond response",
   },
   "howItWorks.api.desc": {
-    fr: "Envoyez les détails de la transaction, recevez un score de risque, une décision et une explication complète — le tout en moins de 200ms. Compatible avec tous les systèmes de transfert existants.",
-    en: "Send transaction details, receive a risk score, decision, and full explanation — all in under 200ms. Compatible with all existing transfer systems.",
+    fr: "Envoyez les détails de la transaction, recevez un score de risque, une décision et une explication complète. Compatible avec tous les systèmes de transfert existants.",
+    en: "Send transaction details, receive a risk score, decision, and full explanation. Compatible with all existing transfer systems.",
   },
 
   // Pricing
@@ -299,52 +288,6 @@ const translations = {
   "team.title": {
     fr: "Les personnes derrière YARDA",
     en: "The People Behind YARDA",
-  },
-
-  // References
-  "references.label": { fr: "Références", en: "References" },
-  "references.title": {
-    fr: "Ils nous font confiance",
-    en: "They Trust Us",
-  },
-  "references.subtitle": {
-    fr: "Des opérateurs de transfert d'argent et de mobile money à travers l'Afrique de l'Ouest utilisent YARDA pour sécuriser leurs transactions et renforcer leur conformité réglementaire.",
-    en: "Money transfer and mobile money operators across West Africa use YARDA to secure their transactions and strengthen their regulatory compliance.",
-  },
-  "references.testimonials.label": {
-    fr: "Témoignages",
-    en: "Testimonials",
-  },
-  "references.metrics.label": {
-    fr: "Résultats concrets",
-    en: "Proven Results",
-  },
-  "references.metric1.title": {
-    fr: "Réduction de la fraude",
-    en: "Fraud Reduction",
-  },
-  "references.metric1.value": { fr: "85%", en: "85%" },
-  "references.metric1.desc": {
-    fr: "de réduction moyenne des pertes liées à la fraude et au blanchiment chez nos clients.",
-    en: "average reduction in fraud and money laundering losses across our clients.",
-  },
-  "references.metric2.title": {
-    fr: "Faux positifs",
-    en: "False Positives",
-  },
-  "references.metric2.value": { fr: "-60%", en: "-60%" },
-  "references.metric2.desc": {
-    fr: "de réduction des faux positifs par rapport aux systèmes basés sur des règles statiques.",
-    en: "reduction in false positives compared to static rule-based systems.",
-  },
-  "references.metric3.title": {
-    fr: "Conformité",
-    en: "Compliance",
-  },
-  "references.metric3.value": { fr: "100%", en: "100%" },
-  "references.metric3.desc": {
-    fr: "de nos clients sont en conformité avec les exigences LCB-FT de leur régulateur après déploiement de YARDA.",
-    en: "of our clients are compliant with their regulator's AML/CFT requirements after deploying YARDA.",
   },
 
   // CTA / Contact

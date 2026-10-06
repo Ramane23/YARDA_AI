@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Zap, Clock, ShieldCheck } from "lucide-react";
+import { Globe, Plug, ShieldCheck } from "lucide-react";
 import { useTranslation } from "@/lib/i18n-context";
 
 export function Hero() {
@@ -75,9 +75,9 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center justify-center gap-6 lg:justify-start"
             >
               {[
-                { icon: Clock, text: t("hero.trust.speed") },
-                { icon: ShieldCheck, text: t("hero.trust.uptime") },
-                { icon: Zap, text: t("hero.trust.compliance") },
+                { icon: ShieldCheck, text: t("hero.trust.compliance") },
+                { icon: Plug, text: t("hero.trust.api") },
+                { icon: Globe, text: t("hero.trust.origin") },
               ].map(({ icon: Icon, text }) => (
                 <div
                   key={text}
