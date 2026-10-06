@@ -118,7 +118,7 @@ export default function HowItWorksPage() {
                 </pre>
                 <div className="mt-4 border-t border-white/10 pt-4 text-gray-400">
                   <span className="text-green-400">Response</span>{" "}
-                  <span className="text-white/40">200 OK — 142ms</span>
+                  <span className="text-white/40">200 OK</span>
                 </div>
                 <pre className="mt-2 text-accent/80">
 {`{

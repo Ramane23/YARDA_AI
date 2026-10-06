@@ -36,8 +36,7 @@ https://vercel.com`,
         text: `YARDA AI fournit une plateforme SaaS (Software as a Service) de détection de fraude et de conformité réglementaire à destination des opérateurs de transfert d'argent (MTO) et des opérateurs de mobile money (MMO), principalement en Afrique de l'Ouest.
 
 Les services comprennent notamment :
-• Un moteur de scoring de risque basé sur l'intelligence artificielle hybride (détection d'anomalies, classification supervisée, analyse de réseaux)
-• Un pipeline d'IA progressif (détection d'anomalies, classification supervisée, détection de réseaux)
+• Un moteur de scoring de risque basé sur un pipeline d'IA progressif (détection d'anomalies, puis classification supervisée) ; l'analyse de réseaux sera proposée ultérieurement
 • Un tableau de bord en temps réel pour le monitoring des transactions et la gestion des alertes
 • Une API REST pour l'intégration avec les systèmes existants des clients
 • Des rapports de conformité et une piste d'audit exploitable
@@ -170,8 +169,7 @@ https://vercel.com`,
         text: `YARDA AI provides a SaaS (Software as a Service) platform for fraud detection and regulatory compliance for money transfer operators (MTOs) and mobile money operators (MMOs), primarily in West Africa.
 
 Services include:
-• A risk scoring engine based on hybrid artificial intelligence (anomaly detection, supervised classification, network analysis)
-• A progressive AI pipeline (anomaly detection, supervised classification, network detection)
+• A risk scoring engine based on a progressive AI pipeline (anomaly detection, then supervised classification); network analysis will be offered at a later stage
 • A real-time dashboard for transaction monitoring and alert management
 • A REST API for integration with clients' existing systems
 • Compliance reports and an actionable audit trail

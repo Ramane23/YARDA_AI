@@ -5,6 +5,8 @@ const translations = {
   "nav.features": { fr: "Fonctionnalités", en: "Features" },
   "nav.howItWorks": { fr: "Comment ça marche", en: "How It Works" },
   "nav.about": { fr: "À propos", en: "About" },
+  "moved.text": { fr: "Cette page a été déplacée.", en: "This page has moved." },
+  "moved.link": { fr: "Continuer", en: "Continue" },
   "nav.demo": { fr: "Demander une démo", en: "Request a Demo" },
 
   // Hero
@@ -75,8 +77,8 @@ const translations = {
     en: "A Complete Platform to Master Your Risks",
   },
   "featuresPreview.subtitle": {
-    fr: "YARDA crée et déploie des modèles d'IA qui apprennent en continu sur vos données transactionnelles anonymisées — pour une détection de fraude qui s'adapte à votre réalité, pas à des règles génériques.",
-    en: "YARDA creates and deploys AI models that continuously learn from your anonymized transaction data — for fraud detection that adapts to your reality, not generic rules.",
+    fr: "YARDA crée et déploie des modèles d'IA qui apprennent en continu sur vos données transactionnelles pseudonymisées — pour une détection de fraude qui s'adapte à votre réalité, pas à des règles génériques.",
+    en: "YARDA creates and deploys AI models that continuously learn from your pseudonymized transaction data — for fraud detection that adapts to your reality, not generic rules.",
   },
   "featuresPreview.cta": {
     fr: "Voir toutes les fonctionnalités",
@@ -86,16 +88,16 @@ const translations = {
   // Feature items
   "feature.ai.title": { fr: "Pipeline IA progressif", en: "Progressive AI Pipeline" },
   "feature.ai.desc": {
-    fr: "Trois modèles d'IA déployés progressivement : d'abord la détection d'anomalies entraînée sur vos données transactionnelles anonymisées, puis un classificateur supervisé multi-labels entraîné sur les labels de votre équipe selon votre propre taxonomie de fraude, et enfin un modèle de détection de réseaux (GNN) où les transactions ne sont plus des entités individuelles mais des nœuds d'un graphe.",
-    en: "Three AI models deployed progressively: first, anomaly detection trained on your anonymized transaction data, then a multi-label supervised classifier trained on your team's labels using your own fraud taxonomy, and finally a network detection model (GNN) where transactions are no longer individual entities but nodes in a graph.",
+    fr: "Trois modèles d'IA déployés progressivement : d'abord la détection d'anomalies entraînée sur vos données transactionnelles pseudonymisées, puis un classificateur supervisé multi-labels entraîné sur les labels de votre équipe selon votre propre taxonomie de fraude, et bientôt un modèle de détection de réseaux (GNN) où les transactions ne sont plus des entités individuelles mais des nœuds d'un graphe.",
+    en: "Three AI models deployed progressively: first, anomaly detection trained on your pseudonymized transaction data, then a multi-label supervised classifier trained on your team's labels using your own fraud taxonomy, and coming next, a network detection model (GNN) where transactions are no longer individual entities but nodes in a graph.",
   },
   "feature.anonymized.title": {
-    fr: "Données anonymisées & respect de la vie privée",
-    en: "Anonymized Data & Privacy by Design",
+    fr: "Données pseudonymisées & respect de la vie privée",
+    en: "Pseudonymized Data & Privacy by Design",
   },
   "feature.anonymized.desc": {
-    fr: "YARDA traite exclusivement des données transactionnelles anonymisées — aucune donnée personnelle n'est nécessaire ni utilisée. Vos clients partagent leurs flux de transactions dépourvus d'informations identifiantes, ce qui nous permet d'entraîner des modèles puissants tout en garantissant le respect total de la vie privée et de la réglementation.",
-    en: "YARDA exclusively processes anonymized transaction data — no personal data is needed or used. Your clients share transaction flows stripped of identifying information, allowing us to train powerful models while fully respecting privacy and regulatory requirements.",
+    fr: "YARDA n'a besoin ni des noms, ni des numéros de téléphone, ni des adresses de vos clients : les identifiants sont pseudonymisés avant l'envoi. Les données transactionnelles restent des données personnelles au sens de la réglementation ; nous les traitons comme sous-traitant, selon notre politique de confidentialité.",
+    en: "YARDA does not need your customers' names, phone numbers or addresses: identifiers are pseudonymized before they are sent. Transaction data remains personal data under the regulations; we process it as a sub-processor, as described in our privacy policy.",
   },
   "feature.dashboard.title": {
     fr: "Tableau de bord en temps réel",
@@ -137,28 +139,28 @@ const translations = {
     en: "From Integration to Intelligence in 4 Steps",
   },
   "howItWorks.subtitle": {
-    fr: "YARDA crée des modèles d'IA entraînés sur vos données transactionnelles anonymisées — sans aucune donnée personnelle. Chaque modèle apprend de votre activité et s'améliore en continu. C'est notre point fort : une IA qui comprend votre réalité.",
-    en: "YARDA builds AI models trained on your anonymized transaction data — with zero personal data. Each model learns from your activity and continuously improves. This is our edge: AI that understands your reality.",
+    fr: "YARDA crée des modèles d'IA entraînés sur vos données transactionnelles pseudonymisées — sans noms, téléphones ni adresses. Chaque modèle apprend de votre activité et s'améliore en continu. C'est notre point fort : une IA qui comprend votre réalité.",
+    en: "YARDA builds AI models trained on your pseudonymized transaction data — no names, phone numbers or addresses. Each model learns from your activity and continuously improves. This is our edge: AI that understands your reality.",
   },
-  "howItWorks.step1.title": { fr: "Connectez & anonymisez", en: "Connect & Anonymize" },
+  "howItWorks.step1.title": { fr: "Connectez & pseudonymisez", en: "Connect & Pseudonymize" },
   "howItWorks.step1.desc": {
-    fr: "Partagez vos données transactionnelles anonymisées via notre API REST — aucune donnée personnelle n'est nécessaire. YARDA utilise uniquement les caractéristiques de la transaction (montant, devise, corridor, horodatage, etc.) sans aucune information identifiante. L'intégration se fait en moins d'une heure.",
-    en: "Share your anonymized transaction data through our REST API — no personal data is needed. YARDA only uses transaction characteristics (amount, currency, corridor, timestamp, etc.) without any identifying information. Integration takes less than one hour.",
+    fr: "Partagez vos données transactionnelles via notre API REST, avec des identifiants pseudonymisés — ni noms, ni téléphones, ni adresses. YARDA utilise les caractéristiques de la transaction (montant, devise, corridor, horodatage, etc.). L'intégration se fait en moins d'une heure.",
+    en: "Share your transaction data through our REST API with pseudonymized identifiers — no names, phone numbers or addresses. YARDA uses transaction characteristics (amount, currency, corridor, timestamp, etc.). Integration takes less than one hour.",
   },
   "howItWorks.step2.title": { fr: "Détectez les anomalies", en: "Detect Anomalies" },
   "howItWorks.step2.desc": {
-    fr: "Le premier modèle d'IA s'entraîne sur vos données transactionnelles anonymisées pour apprendre les schémas normaux de votre activité. Sans aucun label nécessaire, il identifie immédiatement les transactions qui dévient du comportement habituel — les anomalies qui méritent une attention particulière.",
-    en: "The first AI model trains on your anonymized transaction data to learn the normal patterns of your business. Without any labels needed, it immediately identifies transactions that deviate from usual behavior — anomalies that deserve closer attention.",
+    fr: "Le premier modèle d'IA s'entraîne sur vos données transactionnelles pseudonymisées pour apprendre les schémas normaux de votre activité. Sans aucun label nécessaire, il identifie immédiatement les transactions qui dévient du comportement habituel — les anomalies qui méritent une attention particulière.",
+    en: "The first AI model trains on your pseudonymized transaction data to learn the normal patterns of your business. Without any labels needed, it immediately identifies transactions that deviate from usual behavior — anomalies that deserve closer attention.",
   },
   "howItWorks.step3.title": { fr: "Classifiez la fraude", en: "Classify Fraud" },
   "howItWorks.step3.desc": {
     fr: "À partir des alertes du modèle d'anomalies, vos équipes étiquettent les transactions selon votre propre taxonomie de fraude (multi-labels). Ces labels entraînent un modèle de classification supervisée qui apprend à distinguer chaque type de fraude spécifique à votre activité — avec une précision qui augmente à chaque étiquetage.",
     en: "From the anomaly model's alerts, your teams label transactions using your own fraud taxonomy (multi-label). These labels train a supervised classification model that learns to distinguish each type of fraud specific to your business — with accuracy that increases with every label.",
   },
-  "howItWorks.step4.title": { fr: "Détectez les réseaux", en: "Detect Networks" },
+  "howItWorks.step4.title": { fr: "Détectez les réseaux (bientôt)", en: "Detect Networks (coming soon)" },
   "howItWorks.step4.desc": {
-    fr: "Le troisième modèle — un réseau de neurones sur graphe (GNN) — va au-delà de la transaction individuelle. Il analyse les relations entre transactions, expéditeurs et bénéficiaires pour détecter les réseaux frauduleux organisés, les schémas de blanchiment et les rings de fraude que les modèles classiques ne peuvent pas voir.",
-    en: "The third model — a graph neural network (GNN) — goes beyond the individual transaction. It analyzes relationships between transactions, senders, and recipients to detect organized fraud networks, laundering patterns, and fraud rings that traditional models cannot see.",
+    fr: "Le troisième modèle, en cours de développement — un réseau de neurones sur graphe (GNN) — ira au-delà de la transaction individuelle. Il analysera les relations entre transactions, expéditeurs et bénéficiaires pour détecter les réseaux frauduleux organisés, les schémas de blanchiment et les rings de fraude que les modèles classiques ne peuvent pas voir.",
+    en: "The third model, now in development — a graph neural network (GNN) — will go beyond the individual transaction. It will analyze relationships between transactions, senders, and recipients to detect organized fraud networks, laundering patterns, and fraud rings that traditional models cannot see.",
   },
   "howItWorks.api.label": { fr: "Intégration API", en: "API Integration" },
   "howItWorks.api.title": {
@@ -191,7 +193,7 @@ const translations = {
     en: "Up to 10K transactions/month",
   },
   "pricing.starter.f2": { fr: "Détection d'anomalies", en: "Anomaly Detection" },
-  "pricing.starter.f3": { fr: "Données 100% anonymisées", en: "100% Anonymized Data" },
+  "pricing.starter.f3": { fr: "Identifiants pseudonymisés", en: "Pseudonymized identifiers" },
   "pricing.starter.f4": { fr: "Tableau de bord basique", en: "Basic Dashboard" },
   "pricing.starter.f5": { fr: "Support par email", en: "Email Support" },
 
@@ -231,8 +233,8 @@ const translations = {
     en: "Unlimited Transactions",
   },
   "pricing.enterprise.f2": {
-    fr: "Détection de réseaux frauduleux (GNN)",
-    en: "Fraud Network Detection (GNN)",
+    fr: "Détection de réseaux frauduleux (GNN, bientôt)",
+    en: "Fraud Network Detection (GNN, coming soon)",
   },
   "pricing.enterprise.f3": { fr: "SLA garanti", en: "Guaranteed SLA" },
   "pricing.enterprise.f4": { fr: "Support dédié & accompagnement", en: "Dedicated Support & Onboarding" },
