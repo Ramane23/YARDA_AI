@@ -12,7 +12,6 @@ const NAV_LINKS = [
   { href: "/features", key: "nav.features" as const },
   { href: "/how-it-works", key: "nav.howItWorks" as const },
   { href: "/about", key: "nav.about" as const },
-  { href: "/references", key: "nav.references" as const },
 ];
 
 export function Navbar() {
@@ -27,9 +26,10 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
+  // The mobile menu closes when a link is activated rather than in an effect
+  // keyed on `pathname`: an effect would set state during render commit and
+  // the lint rule `react-hooks/set-state-in-effect` flags it.
+  const closeMobileMenu = () => setMobileOpen(false);
 
   return (
     <header
@@ -106,6 +106,7 @@ export function Navbar() {
               <Link
                 key={href}
                 href={href}
+                onClick={closeMobileMenu}
                 className={`text-sm font-medium ${
                   pathname === href ? "text-sky" : "text-white/80"
                 }`}
@@ -117,6 +118,7 @@ export function Navbar() {
               <LangToggle />
               <Link
                 href="#contact"
+                onClick={closeMobileMenu}
                 className="rounded-xl bg-gradient-to-r from-sky to-accent px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-sky/25"
               >
                 {t("nav.demo")}

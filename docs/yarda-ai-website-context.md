@@ -290,7 +290,7 @@ POST /api/v1/predict/fraud
 }
 → { "decision": "alert", "fraud_score": 0.78, "explanation": "..." }
 ```
-Single API call, response in <200ms. SDKs for Python, Node.js.
+Single API call. Publish latency figures only once measured in production (load test + monitoring).
 
 ### Target Customers
 - **Money Transfer Operators (MTOs):** Companies sending money to/from Africa (e.g., Europe→Niger, Europe→Ivory Coast)
@@ -319,7 +319,7 @@ The website is a single-page scrolling site with a sticky navbar. Sections in or
 - Subheadline: Brief value prop (2 lines max)
 - Two buttons: "Request a Demo" (primary) + "See How It Works" (secondary/outline)
 - Visual: Abstract dashboard mockup or animated network graph showing fraud detection in action
-- Trust badges: "< 200ms response time" | "99.9% uptime" | "SOC 2 compliant"
+- Trust badges: only verifiable statements (e.g. "Built for AML/CFT compliance", "REST API integration"). Never unmeasured latency/uptime or certifications not held.
 
 ### 3. Problem Statement (light bg)
 - "The fraud landscape in African financial corridors is evolving faster than traditional rule-based systems can keep up."
@@ -342,8 +342,7 @@ The website is a single-page scrolling site with a sticky navbar. Sections in or
 - This maps directly to the 4 phases (Detection → Learning → Classification → Intelligence)
 
 ### 6. Stats/Social Proof (light bg, gradient text numbers)
-- Key metrics: transactions processed, fraud detected, clients protected, response time
-- (Use impressive but realistic placeholder numbers)
+- Key metrics: only real, measured figures with their period and source (e.g. from a pilot). **Never placeholder or invented numbers**; leave the section out until real data exists.
 
 ### 7. Pricing Section (light bg)
 - 3 tiers: Starter, Professional, Enterprise
